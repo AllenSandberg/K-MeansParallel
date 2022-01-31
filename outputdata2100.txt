@@ -1,0 +1,6 @@
+First occurrence at t = 2.000000 with q = 0.106101
+Centers of the clusters:
+ Cluster Centre ID : [ 0 ]  ( 0.000577 , -0.000741,  -0.018171 )
+ Cluster Centre ID : [ 1 ]  ( -0.006727 , 100.008533,  0.000472 )
+ Cluster Centre ID : [ 2 ]  ( 100.010911 , 100.009163,  0.007411 )
+ Cluster Centre ID : [ 3 ]  ( 200.003092 , 100.007062,  99.998630 )

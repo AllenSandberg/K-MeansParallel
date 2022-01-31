@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="%28MPI,OMP%29 K-Means Algorithm Functions.cpp">
+      <Filter>MPI,OMP Business Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="FilesIOFunctions.cpp">
+      <Filter>MPI,OMP Business Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintingFunctions.cpp">
+      <Filter>MPI,OMP Business Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Miscellaneous Functions.cpp">
+      <Filter>MPI,OMP Business Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{fb7c85c9-cabe-4e34-ae5a-55226deeec38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MPI,OMP Business Logic">
+      <UniqueIdentifier>{858c63de-9244-42a3-bd62-23205ff24787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cuda Business Logic">
+      <UniqueIdentifier>{a3c3910c-5366-4769-a7ff-4dbd1a1c357e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{2ec5539b-6c23-4b0a-aa5f-cd038007444c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GlobalProjectHeader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StructsHeader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionPrototypesHeader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu">
+      <Filter>Cuda Business Logic</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
