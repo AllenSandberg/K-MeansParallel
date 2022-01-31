@@ -13,8 +13,13 @@ I implemented a simplified K-Means algorithm to find K clusters. The program fin
 
 Additional info:
 
-• Proper parallel implementation of the problem with three components: MPI+OpenMP+CUDA configuration • Implementation of the K-MEANS algorithm explained below.
-• Used first K points at t=0 as initial positions of the centers of the clusters. In case that in some iteration there will be no points in cluster – kept its center for the next iteration. • Calculations stops after the Quality Measure was reached – is less than given value QM • Diameter of a cluster is the largest distance between two points of this cluster. • Distance between two clusters is a distance between centers of these clusters. • Project is able to run on more that one computer (using MPICH ) • The set of points may contain at least 10000 but not more than 3000000 points.
+• Proper parallel implementation of the problem with three components: MPI+OpenMP+CUDA configuration 
+• Implementation of the K-MEANS algorithm explained below.
+• Used first K points at t=0 as initial positions of the centers of the clusters. In case that in some iteration there will be no points in cluster – kept its center for the next iteration. 
+• Calculations stops after the Quality Measure was reached – is less than given value QM 
+• Diameter of a cluster is the largest distance between two points of this cluster. 
+• Distance between two clusters is a distance between centers of these clusters. 
+• Project is able to run on more that one computer (using MPICH ) • The set of points may contain at least 10000 but not more than 3000000 points.
 
 Simplified K-Means algorithm
 
@@ -23,8 +28,16 @@ Group points around the given cluster centers - for each point define a center t
 Recalculate the cluster centers (average of all points in the cluster)
 Check the termination condition – no points move to other clusters or maximum iteration LIMIT was made.
 Repeat from 2 till the termination condition fulfills.
-Evaluate the Quality of the clusters found. Calculate diameter of each cluster – maximum distance between any two points in this cluster. The Quality is equal to an average of ratio diameters of the cluster divided by distance to other clusters. For example, in case of k = 3 the quality is equal q = (d1/D12 + d1/D13 + d2/D21 + d2/D23 + d3/D31 + d3/D32) / 6, where di is a diameter of cluster i and Dij is a distance between centers of cluster i and cluster j.
-Input data and Output Result of the project Supplied input data • N - number of points • K - number of clusters to find • LIMIT – the maximum number of iterations for K-MEAN algorithm. • QM – quality measure to stop • T – defines the end of time interval [0, T] • dT – defines moments t = n*dT, n = { 0, 1, 2, … , T/dT} for which calculate the clusters and the quality • Coordinates and Velocities of all points
+Evaluate the Quality of the clusters found. Calculate diameter of each cluster – maximum distance between any two points in this cluster. 
+The Quality is equal to an average of ratio diameters of the cluster divided by distance to other clusters. 
+For example, in case of k = 3 the quality is equal q = (d1/D12 + d1/D13 + d2/D21 + d2/D23 + d3/D31 + d3/D32) / 6, where di is a diameter of cluster i and Dij is a distance between centers of cluster i and cluster j.
+Input data and Output Result of the project Supplied input data 
+• N - number of points 
+• K - number of clusters to find 
+• LIMIT – the maximum number of iterations for K-MEAN algorithm. 
+• QM – quality measure to stop 
+• T – defines the end of time interval [0, T] 
+• dT – defines moments t = n*dT, n = { 0, 1, 2, … , T/dT} for which calculate the clusters and the quality • Coordinates and Velocities of all points
 
 Input File format
 
